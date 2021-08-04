@@ -28,13 +28,17 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./prework.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with Quicktime.
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Spent a lot of time tinkering with the Event -> Action interface, also spent a long time wondering why the app wasn't working, only to realize that the line
+
+' let bill = Double(billAmountTextField.text!) ?? 0 '
+
+in my ViewController.swift file was automatically making the bill value zero when the dollar sign was still in the string input.
 
 ## License
 
